@@ -15,6 +15,7 @@ def value_iteration(env, discount_factor=1.0, epsilon=0.0001):
 
         return actions
 
+
     policy = np.zeros([env.nS, env.nA])
     vfn = np.zeros(env.nS)
 

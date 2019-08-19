@@ -26,12 +26,12 @@ class GP():
                     state_t.append(outcomes)
                 
                 transitions.append(state_t)
-            
+
             return transitions
 
         self.nS = 101 # state is gamblers capital
         self.nA = 99  # maximum stake amount is min(s, 100-s)
-
+        
         self.P = gen_transitions()
 
 
