@@ -8,10 +8,9 @@ def value_iteration(env, discount_factor=1.0, epsilon=0.0001):
     def one_step_lookahead(s, vfn):
         actions = np.zeros(env.nA)
 
-        for a in range(env.nA):
-            outcomes = env.P[s][a]
-            for o in range(len(outcomes)):
-                (prob, next_state, reward, done) = outcomes[o]
+        for a, action in enumerate(env.P[s]):
+            for outcome in range(len(action)):
+                (prob, next_state, reward, done) = action[outcome]
                 actions[a] += prob*(reward + discount_factor*vfn[next_state])
 
         return actions
