@@ -18,8 +18,8 @@ class GP():
                         prob_w = ph
                         prob_l = 1 - ph
 
-                    win_outcome   = (prob_w , state, action, state + action, 1 if state+action == 100 and state != 100 else 0  , state == 0 or state == 100)
-                    loose_outcome = (prob_l , state, action, state - action, 0                                                 , state == 0 or state == 100)
+                    win_outcome   = (prob_w , min(100, state + action), 1 if state+action == 100 and state != 100 else 0  , state == 0 or state == 100)
+                    loose_outcome = (prob_l , max(0,   state - action), 0                                                 , state == 0 or state == 100)
 
                     outcomes = (win_outcome, loose_outcome)
 
