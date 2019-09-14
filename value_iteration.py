@@ -45,20 +45,20 @@ if __name__ == "__main__":
 
     matplotlib.use('TkAgg')
     
-    fig = plt.figure()
+    fig = plt.figure(figsize=(20,20))
 
     vfn = fig.add_subplot(121)
     pol = fig.add_subplot(122)
 
     vfn.plot(v)
-    vfn.set_xlabel('Capital')
-    vfn.set_ylabel('State Value')
-    vfn.set_title('Value function Gamblers Problem')
+    vfn.set_xlabel('Capital', fontsize=16)
+    vfn.set_ylabel('State Value', fontsize=16)
+    vfn.set_title('Value function Gamblers Problem', fontsize=22)
 
     actions = np.argmax(np.array(p), axis=1)
     pol.plot(actions)
-    pol.set_xlabel('Capital')
-    pol.set_ylabel('Stake')
-    pol.set_title('Policy Gamblers Problem')
+    pol.set_xlabel('Capital', fontsize=16)
+    pol.set_ylabel('Stake', fontsize=16)
+    pol.set_title('Policy Gamblers Problem', fontsize=22)
 
     plt.show()
