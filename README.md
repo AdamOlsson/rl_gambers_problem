@@ -5,6 +5,7 @@
 The litterature follow throughout this series is <em>Reinforcement Learning</em> "An Introduction" by Ricard S. Button and Andrew G. Barto. 
 ISBN: 9780262039246
 </p>
+
 ## Gambler's Problem
 The Gambler's Problem is a straight forward problem which can be solved by applying Valute Iteration described in [part 1](https://github.com/AdamOlsson/rl_policy_iteration) of this series. A gambler has the opportunity to make bets on the outcome of a sequence of coin flips. If the coin comes up *heads* he wins as much money as he put on stake and loses otherwise. The game ends when the gambler reaches 100EUR or when the gambler run out of money. The rewards are 1 if the gambler wins and 0 on all other state transitions. Some restrictions are: the gambler can't stake more than money than he has and (2) all stakes are positive integers.
 
