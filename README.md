@@ -5,3 +5,5 @@
 The litterature follow throughout this series is <em>Reinforcement Learning</em> "An Introduction" by Ricard S. Button and Andrew G. Barto. 
 ISBN: 9780262039246
 </p>
+## Gambler's Problem
+<p>The Gambler's Problem is a straight forward problem which can be solved by applying Valute Iteration described in [part 1](https://github.com/AdamOlsson/rl_policy_iteration) of this series. </p>
